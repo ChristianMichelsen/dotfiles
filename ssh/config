@@ -1,0 +1,29 @@
+Host hep
+    HostName hep03.hpc.ku.dk
+    User mnv794
+    RemoteCommand zsh -l
+    RequestTTY force
+
+
+Host hep02
+    HostName hep02.hpc.ku.dk
+    User mnv794
+    RemoteCommand zsh -
+    RequestTTY force
+ 
+Host fend01-travel
+   User mnv794
+   Hostname fend01
+   ProxyCommand ssh -W %h.hpc.ku.dk:%p proxy@front.hpc.ku.dk 
+ 
+ 
+Host willerslev
+    HostName ssh-snm-willerslev.science.ku.dk
+    User mnv794
+
+### The Remote Host
+Host willerslev_wonton
+  HostName wonton-snm
+  User mnv794
+  ProxyJump willerslev
+

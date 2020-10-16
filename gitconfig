@@ -1,0 +1,21 @@
+[user]
+	name = Christian Michelsen
+	email = christianmichelsen@gmail.com
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+[web]
+	browser = google-chrome
+[alias]
+	st = status
+	cm = commit -m
+    br = branch
+    co = checkout
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[credential]
+	helper = osxkeychain
